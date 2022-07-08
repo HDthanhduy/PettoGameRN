@@ -25,6 +25,7 @@
     "react": "17.0.2",
     "react-native": "0.68.1",
     "react-native-get-random-values": "^1.7.2",
+    "react-native-svg": "9.6.4",
     "three": "^0.142.0"
   },
   "devDependencies": {
