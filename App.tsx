@@ -15,7 +15,6 @@ import {
 } from '@walletconnect/react-native-dapp';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {scheme} from './app.json';
-import Home from './src/screens/home';
 
 const shortenAddress = (address: string) => {
   return `${address.slice(0, 6)}...${address.slice(
@@ -36,24 +35,21 @@ const App = () => {
   }, [connector]);
 
   return (
-    // <View style={[StyleSheet.absoluteFill, styles.center]}>
-    //   {!connector.connected && (
-    //     <TouchableOpacity onPress={connectWallet}>
-    //       <Text>Connect a Wallet</Text>
-    //     </TouchableOpacity>
-    //   )}
-    //   {!!connector.connected && (
-    //     <View style={styles.center}>
-    //       <Text>{shortenAddress(connector.accounts[0])}</Text>
-    //       <TouchableOpacity style={styles.paddingTop} onPress={killSession}>
-    //         <Text>Log out</Text>
-    //       </TouchableOpacity>
-    //     </View>
-    //   )}
-    // </View>
-    // <View>
-    <Home />
-    // </View>
+    <View style={[StyleSheet.absoluteFill, styles.center]}>
+      {!connector.connected && (
+        <TouchableOpacity onPress={connectWallet}>
+          <Text>Connect a Wallet</Text>
+        </TouchableOpacity>
+      )}
+      {!!connector.connected && (
+        <View style={styles.center}>
+          <Text>{shortenAddress(connector.accounts[0])}</Text>
+          <TouchableOpacity style={styles.paddingTop} onPress={killSession}>
+            <Text>Log out</Text>
+          </TouchableOpacity>
+        </View>
+      )}
+    </View>
   );
 };
 
