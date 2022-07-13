@@ -26,7 +26,8 @@
     "react-native": "0.68.1",
     "react-native-get-random-values": "^1.7.2",
     "react-native-gl-model-view": "^1.6.0",
-    "three": "^0.142.0"
+    "three": "^0.142.0",
+    "react-native-svg": "9.6.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
