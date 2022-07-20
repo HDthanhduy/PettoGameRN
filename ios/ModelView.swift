@@ -23,6 +23,13 @@ class ModelView: UIView {
     }
   }
   
+  private lazy var imageView: UIImageView = {
+    let imageView = UIImageView(frame: UIScreen.main.bounds)
+    imageView.image = UIImage(named: "background.jpeg")
+    imageView.contentMode = .scaleAspectFill
+    return imageView
+  }()
+  
   private var sceneView: SCNView!
 
   private var animations = [GLTFSCNAnimation]()
@@ -42,7 +49,11 @@ class ModelView: UIView {
   
   private func setupView() {
     sceneView = SCNView(frame: UIScreen.main.bounds, options: nil)
+    sceneView.backgroundColor = .clear
+    
+    addSubview(imageView)
     addSubview(sceneView)
+    
     cameraNode.camera = camera
     cameraNode.position = SCNVector3(0, 0, 3.5)
     camera.automaticallyAdjustsZRange = true
@@ -55,7 +66,7 @@ class ModelView: UIView {
   }
  
   private func loadAsset() {
-      guard let assetURL = Bundle.main.url(forResource: "panda2", withExtension: "glb", subdirectory: "Models")
+      guard let assetURL = Bundle.main.url(forResource: "panda2", withExtension: "glb")
       else {
           print("Failed to find asset for URL")
           return

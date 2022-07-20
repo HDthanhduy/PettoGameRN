@@ -12,6 +12,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		52186CF92887EC87004FCD65 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 52186CF72887EC87004FCD65 /* background.jpeg */; };
+		52186CFD2887EC92004FCD65 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 52186CF72887EC87004FCD65 /* background.jpeg */; };
+		52186CFE2887ECB5004FCD65 /* panda2.glb in Resources */ = {isa = PBXBuildFile; fileRef = EE4916212887E32D001433DC /* panda2.glb */; };
 		625A53C97C84D9DC5724AD9B /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1BAB7F8008F5974746569 /* ExpoModulesProvider.swift */; };
 		7699B88040F8A987B510C191 /* libPods-PettoGameRN-PettoGameRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-PettoGameRN-PettoGameRNTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -23,7 +26,6 @@
 		EE4916192887BE74001433DC /* LoadModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4916172887BE74001433DC /* LoadModelManager.m */; };
 		EE49161A2887BE74001433DC /* LoadModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4916172887BE74001433DC /* LoadModelManager.m */; };
 		EE4916222887E32D001433DC /* panda2.glb in Resources */ = {isa = PBXBuildFile; fileRef = EE4916212887E32D001433DC /* panda2.glb */; };
-		EE4916232887E32D001433DC /* panda2.glb in Resources */ = {isa = PBXBuildFile; fileRef = EE4916212887E32D001433DC /* panda2.glb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PettoGameRN/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-PettoGameRN-PettoGameRNTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PettoGameRN-PettoGameRNTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-PettoGameRN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PettoGameRN.debug.xcconfig"; path = "Target Support Files/Pods-PettoGameRN/Pods-PettoGameRN.debug.xcconfig"; sourceTree = "<group>"; };
+		52186CF72887EC87004FCD65 /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-PettoGameRN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PettoGameRN.release.xcconfig"; path = "Target Support Files/Pods-PettoGameRN/Pods-PettoGameRN.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-PettoGameRN-PettoGameRNTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PettoGameRN-PettoGameRNTests.debug.xcconfig"; path = "Target Support Files/Pods-PettoGameRN-PettoGameRNTests/Pods-PettoGameRN-PettoGameRNTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-PettoGameRN.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PettoGameRN.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,10 +130,12 @@
 		13B07FAE1A68108700A75B9A /* PettoGameRN */ = {
 			isa = PBXGroup;
 			children = (
+				EE4916202887E32D001433DC /* Models */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
+				52186CF72887EC87004FCD65 /* background.jpeg */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				EE4916132887BDFD001433DC /* ModelView.swift */,
@@ -170,7 +175,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				EE4916202887E32D001433DC /* Models */,
 				13B07FAE1A68108700A75B9A /* PettoGameRN */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PettoGameRNTests */,
@@ -309,7 +313,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE4916232887E32D001433DC /* panda2.glb in Resources */,
+				52186CFE2887ECB5004FCD65 /* panda2.glb in Resources */,
+				52186CFD2887EC92004FCD65 /* background.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				EE4916222887E32D001433DC /* panda2.glb in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				52186CF92887EC87004FCD65 /* background.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
