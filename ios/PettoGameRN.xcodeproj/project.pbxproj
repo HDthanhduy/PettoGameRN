@@ -16,6 +16,14 @@
 		7699B88040F8A987B510C191 /* libPods-PettoGameRN-PettoGameRNTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-PettoGameRN-PettoGameRNTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		BE3F31F0625A6B72FE333072 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FC0F3629014244C35B9F42 /* ExpoModulesProvider.swift */; };
+		EE4916102887BCB1001433DC /* GLTFKit2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE49160F2887BCB1001433DC /* GLTFKit2.framework */; };
+		EE4916112887BCB1001433DC /* GLTFKit2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE49160F2887BCB1001433DC /* GLTFKit2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE4916142887BDFD001433DC /* ModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4916132887BDFD001433DC /* ModelView.swift */; };
+		EE4916162887BE43001433DC /* LoadModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4916152887BE43001433DC /* LoadModelManager.swift */; };
+		EE4916192887BE74001433DC /* LoadModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4916172887BE74001433DC /* LoadModelManager.m */; };
+		EE49161A2887BE74001433DC /* LoadModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4916172887BE74001433DC /* LoadModelManager.m */; };
+		EE4916222887E32D001433DC /* panda2.glb in Resources */ = {isa = PBXBuildFile; fileRef = EE4916212887E32D001433DC /* panda2.glb */; };
+		EE4916232887E32D001433DC /* panda2.glb in Resources */ = {isa = PBXBuildFile; fileRef = EE4916212887E32D001433DC /* panda2.glb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,20 @@
 			remoteInfo = PettoGameRN;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE4916122887BCB1001433DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE4916112887BCB1001433DC /* GLTFKit2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* PettoGameRNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PettoGameRNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +70,12 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-PettoGameRN-PettoGameRNTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PettoGameRN-PettoGameRNTests.release.xcconfig"; path = "Target Support Files/Pods-PettoGameRN-PettoGameRNTests/Pods-PettoGameRN-PettoGameRNTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAF1BAB7F8008F5974746569 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-PettoGameRN/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EE49160F2887BCB1001433DC /* GLTFKit2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GLTFKit2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4916132887BDFD001433DC /* ModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelView.swift; sourceTree = "<group>"; };
+		EE4916152887BE43001433DC /* LoadModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadModelManager.swift; sourceTree = "<group>"; };
+		EE4916172887BE74001433DC /* LoadModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadModelManager.m; sourceTree = "<group>"; };
+		EE49161B2887C117001433DC /* LoadModelApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoadModelApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE4916212887E32D001433DC /* panda2.glb */ = {isa = PBXFileReference; lastKnownFileType = file; path = panda2.glb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-PettoGameRN.a in Frameworks */,
+				EE4916102887BCB1001433DC /* GLTFKit2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +133,10 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				EE4916132887BDFD001433DC /* ModelView.swift */,
+				EE4916152887BE43001433DC /* LoadModelManager.swift */,
+				EE49161B2887C117001433DC /* LoadModelApp-Bridging-Header.h */,
+				EE4916172887BE74001433DC /* LoadModelManager.m */,
 			);
 			name = PettoGameRN;
 			sourceTree = "<group>";
@@ -111,6 +144,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE49160F2887BCB1001433DC /* GLTFKit2.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-PettoGameRN.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-PettoGameRN-PettoGameRNTests.a */,
@@ -136,6 +170,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				EE4916202887E32D001433DC /* Models */,
 				13B07FAE1A68108700A75B9A /* PettoGameRN */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* PettoGameRNTests */,
@@ -178,6 +213,14 @@
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
+		EE4916202887E32D001433DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE4916212887E32D001433DC /* panda2.glb */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,6 +257,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				EE4916122887BCB1001433DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE4916232887E32D001433DC /* panda2.glb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				EE4916222887E32D001433DC /* panda2.glb in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* PettoGameRNTests.m in Sources */,
+				EE49161A2887BE74001433DC /* LoadModelManager.m in Sources */,
 				BE3F31F0625A6B72FE333072 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,8 +489,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				EE4916192887BE74001433DC /* LoadModelManager.m in Sources */,
+				EE4916162887BE43001433DC /* LoadModelManager.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				625A53C97C84D9DC5724AD9B /* ExpoModulesProvider.swift in Sources */,
+				EE4916142887BDFD001433DC /* ModelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +582,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PettoGameRN;
+				SWIFT_OBJC_BRIDGING_HEADER = "LoadModelApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -558,6 +609,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PettoGameRN;
+				SWIFT_OBJC_BRIDGING_HEADER = "LoadModelApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
