@@ -23,12 +23,12 @@ class ModelView: UIView {
     }
   }
   
-  private lazy var imageView: UIImageView = {
-    let imageView = UIImageView(frame: UIScreen.main.bounds)
-    imageView.image = UIImage(named: "background.jpeg")
-    imageView.contentMode = .scaleAspectFill
-    return imageView
-  }()
+//  private lazy var imageView: UIImageView = {
+//    let imageView = UIImageView(frame: UIScreen.main.bounds)
+//    imageView.image = UIImage(named: "background.jpeg")
+//    imageView.contentMode = .scaleAspectFill
+//    return imageView
+//  }()
   
   private var sceneView: SCNView!
 
@@ -49,9 +49,10 @@ class ModelView: UIView {
   
   private func setupView() {
     sceneView = SCNView(frame: UIScreen.main.bounds, options: nil)
+//    sceneView = SCNView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
     sceneView.backgroundColor = .clear
     
-    addSubview(imageView)
+//    addSubview(imageView)
     addSubview(sceneView)
     
     cameraNode.camera = camera

@@ -34,15 +34,14 @@ const WalletConnectScreen = ({connectWallet}: Props) => {
             <TouchableOpacity
               onPress={connectWallet}
               style={{
-                width: '90%',
-                height: '35%',
+                height: 40,
                 backgroundColor: '#376AED',
                 justifyContent: 'center',
                 padding: 10,
                 borderRadius: 10,
               }}>
               <Text
-                style={{fontSize: 18, fontWeight: 'bold', color: '#FFFFFF'}}>
+                style={{fontSize: 15, fontWeight: 'bold', color: '#FFFFFF'}}>
                 Connect a Wallet
               </Text>
             </TouchableOpacity>

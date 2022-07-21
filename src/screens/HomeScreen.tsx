@@ -1,6 +1,7 @@
 import {
   ImageBackground,
   Platform,
+  SafeAreaView,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -35,7 +36,7 @@ const HomeScreen = ({connector, killSession}: Props) => {
           backgroundColor: '#376AED',
           padding: 10,
           borderRadius: 5,
-          marginTop: 20,
+          marginTop: 40,
         }}>
         <Text style={{color: '#FFFFFF'}}>
           {shortenAddress(connector.accounts[0])}
@@ -43,7 +44,7 @@ const HomeScreen = ({connector, killSession}: Props) => {
       </View>
 
       {Platform.OS === 'ios' ? (
-        <MyCustomView style={{width: '100%', height: '40%'}} />
+        <MyCustomView style={{width: '100%', height: '80%'}} />
       ) : (
         <View style={{justifyContent: 'center', flex: 1}}>
           <Text>3d Android</Text>
@@ -57,9 +58,12 @@ const HomeScreen = ({connector, killSession}: Props) => {
             padding: 10,
             borderRadius: 10,
             paddingHorizontal: 40,
+            height: 40,
           }}
           onPress={killSession}>
-          <Text>Log Out</Text>
+          <Text style={{fontSize: 15, fontWeight: 'bold', color: '#FFFFFF'}}>
+            Log Out
+          </Text>
         </TouchableOpacity>
       </View>
     </ImageBackground>
