@@ -26,23 +26,43 @@ const shortenAddress = (address: string) => {
 
 const HomeScreen = ({connector, killSession}: Props) => {
   return (
-    <View style={styles.container}>
-      {/* <Text>{shortenAddress(connector.accounts[0])}</Text> */}
-      <ImageBackground
-        source={require('../../assets/earn.png')}
-        resizeMode="cover"
-        style={styles.image}>
-        {/* <Text>okko</Text> */}
-        {Platform.OS === 'ios' ? (
-          <MyCustomView style={{width: '100%', height: '40%'}} />
-        ) : (
-          <Text> Android</Text>
-        )}
-        <TouchableOpacity onPress={killSession}>
-          <Text>Log out</Text>
+    <ImageBackground
+      source={require('../../assets/earn.png')}
+      resizeMode="cover"
+      style={styles.container}>
+      <View
+        style={{
+          backgroundColor: '#376AED',
+          padding: 10,
+          borderRadius: 5,
+          marginTop: 20,
+        }}>
+        <Text style={{color: '#FFFFFF'}}>
+          {shortenAddress(connector.accounts[0])}
+        </Text>
+      </View>
+
+      {Platform.OS === 'ios' ? (
+        <MyCustomView style={{width: '100%', height: '40%'}} />
+      ) : (
+        <View style={{justifyContent: 'center', flex: 1}}>
+          <Text>3d Android</Text>
+        </View>
+      )}
+      <View style={{justifyContent: 'flex-end', flex: 1, marginBottom: 30}}>
+        <TouchableOpacity
+          style={{
+            backgroundColor: '#376AED',
+            justifyContent: 'center',
+            padding: 10,
+            borderRadius: 10,
+            paddingHorizontal: 40,
+          }}
+          onPress={killSession}>
+          <Text>Log Out</Text>
         </TouchableOpacity>
-      </ImageBackground>
-    </View>
+      </View>
+    </ImageBackground>
   );
 };
 
@@ -51,12 +71,13 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // alignItems: 'center',
+    alignItems: 'center',
     // justifyContent: 'center',
     // flexDirection: 'column',
   },
-  image: {
-    flex: 1,
-    justifyContent: 'center',
+  txt: {
+    color: '#FFFFFF',
+    fontSize: 24,
+    fontWeight: 'bold',
   },
 });
