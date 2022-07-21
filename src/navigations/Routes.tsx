@@ -30,21 +30,6 @@ const Routes = () => {
         <WalletConnectScreen connectWallet={connectWallet} />
       )}
     </NavigationContainer>
-    // <View style={[StyleSheet.absoluteFill, styles.center]}>
-    //   {!connector.connected && (
-    //     <TouchableOpacity onPress={connectWallet}>
-    //       <Text>Connect a Wallet</Text>
-    //     </TouchableOpacity>
-    //   )}
-    //   {!!connector.connected && (
-    //     <View style={styles.center}>
-    //       <Text>{shortenAddress(connector.accounts[0])}</Text>
-    //       <TouchableOpacity style={styles.paddingTop} onPress={killSession}>
-    //         <Text>Log out</Text>
-    //       </TouchableOpacity>
-    //     </View>
-    //   )}
-    // </View>
   );
 };
 

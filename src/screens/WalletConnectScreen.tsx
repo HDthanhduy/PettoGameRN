@@ -1,4 +1,10 @@
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  ImageBackground,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import React from 'react';
 
 interface Props {
@@ -7,19 +13,70 @@ interface Props {
 
 const WalletConnectScreen = ({connectWallet}: Props) => {
   return (
-    <View style={[StyleSheet.absoluteFill, styles.center]}>
-      <TouchableOpacity onPress={connectWallet}>
-        <Text>Connect a Wallet</Text>
-      </TouchableOpacity>
-    </View>
+    <ImageBackground
+      source={require('../../assets/bg-gameplay-mobile.png')}
+      resizeMode="cover"
+      style={styles.container}>
+      <View style={styles.txtContainer}>
+        <Text style={styles.txt}>PETTO</Text>
+      </View>
+      <View style={styles.wlcContainer}>
+        <View
+          style={{
+            backgroundColor: '#EDF5',
+            width: '80%',
+            height: '50%',
+            alignItems: 'center',
+            borderRadius: 20,
+          }}>
+          <Text style={styles.txtWalletConnect}>Welcome to Pettoverse</Text>
+          <View style={{flex: 1, justifyContent: 'center'}}>
+            <TouchableOpacity
+              onPress={connectWallet}
+              style={{
+                width: '90%',
+                height: '35%',
+                backgroundColor: '#376AED',
+                justifyContent: 'center',
+                padding: 10,
+                borderRadius: 10,
+              }}>
+              <Text
+                style={{fontSize: 18, fontWeight: 'bold', color: '#FFFFFF'}}>
+                Connect a Wallet
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </View>
+    </ImageBackground>
   );
 };
 
 export default WalletConnectScreen;
 
 const styles = StyleSheet.create({
-  center: {
+  container: {
+    flex: 1,
+  },
+  txtContainer: {
+    flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 60,
+  },
+  wlcContainer: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  txt: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+  },
+  txtWalletConnect: {
+    paddingTop: 20,
+    fontSize: 27,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
   },
 });
