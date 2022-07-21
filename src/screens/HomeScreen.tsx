@@ -2,6 +2,7 @@ import {Platform, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import MyCustomView from './MyCustomView';
 import WalletConnect from '@walletconnect/client';
+import AndroidCustomView from './AndroidCustomView';
 
 interface Props {
   connector: WalletConnect;
@@ -23,7 +24,7 @@ const HomeScreen = ({connector, killSession}: Props) => {
       {Platform.OS === 'ios' ? (
         <MyCustomView style={{width: '100%', height: '80%'}} />
       ) : (
-        <Text> Android</Text>
+        <AndroidCustomView/>
       )}
       <TouchableOpacity onPress={killSession}>
         <Text>Log out</Text>

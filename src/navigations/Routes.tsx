@@ -10,6 +10,7 @@ import {scheme} from '../../app.json';
 import {NavigationContainer} from '@react-navigation/native';
 import WalletConnectScreen from '../screens/WalletConnectScreen';
 import HomeScreen from '../screens/HomeScreen';
+import AndroidCustomView from '../screens/AndroidCustomView';
 
 const Routes = () => {
   const connector = useWalletConnect();
@@ -30,6 +31,7 @@ const Routes = () => {
         <WalletConnectScreen connectWallet={connectWallet} />
       )}
     </NavigationContainer>
+    
     // <View style={[StyleSheet.absoluteFill, styles.center]}>
     //   {!connector.connected && (
     //     <TouchableOpacity onPress={connectWallet}>
